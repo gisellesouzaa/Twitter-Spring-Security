@@ -21,4 +21,16 @@ public class Role {
 	private Long roleId;
 	
 	private String nome;
+	
+	@Getter
+	public enum Values {
+		ADMIN(1L),
+		BASIC(2L);
+		
+		long roleId;	
+		
+		private Values(long roleId) {
+			this.roleId = roleId;
+		}	
+	}
 }
